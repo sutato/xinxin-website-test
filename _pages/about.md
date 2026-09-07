@@ -7,7 +7,7 @@ subtitle: Assistant Research Scientist · Mechanical Engineering · University o
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
   more_info: >
     <p>Ann Arbor, Michigan</p>
     <p>University of Michigan–Dearborn</p>
