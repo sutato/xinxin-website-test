@@ -2,33 +2,41 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Assistant Research Scientist · Mechanical Engineering · University of Michigan–Dearborn
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Ann Arbor, Michigan</p>
+    <p>University of Michigan–Dearborn</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an **Assistant Research Scientist in Mechanical Engineering at the University of Michigan–Dearborn**. My research focuses on computational modeling and physics-informed artificial intelligence for advanced manufacturing, with particular interests in **lithium-ion battery manufacturing** and **metal additive manufacturing**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My work aims to connect **manufacturing process → microstructure → material performance** through multiscale and multiphysics simulation. I develop computational frameworks combining particle-resolved modeling, continuum transport, phase-field methods, CALPHAD, crystal plasticity, scientific computing, and machine-learning-based surrogate models.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Research interests
+
+- **Battery manufacturing:** electrode slurry processing, drying, binder migration, microstructure evolution, and process optimization
+- **Additive manufacturing:** solidification, grain growth, columnar-to-equiaxed transition, and process–structure relationships
+- **Computational materials science:** phase-field modeling, crystal plasticity, CFD–DEM, coarse-grained molecular dynamics, and multiscale modeling
+- **Physics-informed AI:** Gaussian process classification/regression, uncertainty quantification, and surrogate modeling for computational acceleration
+
+My research has involved collaborations with **General Motors Global R&D**, **Pacific Northwest National Laboratory**, the **University of Michigan**, **Texas A&M University**, and federally sponsored advanced-manufacturing programs.
+
+I am interested in research and industry opportunities involving **computational science, battery R&D, modeling & simulation, and advanced manufacturing**.
