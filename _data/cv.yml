@@ -1,12 +1,12 @@
 cv:
   name: Xinxin Yao
-  label: Computational Scientist | Multiphysics & Numerical Modeling
+  label: Computational Scientist | Physics-Based Modeling | AI for Advanced Manufacturing
   email: yaoxinx@umich.edu
   phone: "+1 734-596-1600"
   location: Ann Arbor, Michigan, USA
   image: ""
   summary: >-
-    Computational scientist and mechanical engineer developing physics-based numerical models for advanced manufacturing and materials systems. Expertise in multiphysics simulation, scientific computing, numerical methods, parallel computing, model validation, battery manufacturing, and metal additive manufacturing. Experienced in translating fundamental physics into predictive engineering tools using Fortran, MATLAB, Python, COMSOL, LAMMPS, CFD, DEM, phase-field methods, CALPHAD, and machine-learning surrogate models.
+    Computational scientist and mechanical engineer specializing in physics-based modeling, multiphysics simulation, scientific computing, and AI-accelerated engineering. I develop predictive simulation frameworks that connect manufacturing process, microstructure, and material performance, with applications in lithium-ion battery manufacturing and metal additive manufacturing. My work combines Fortran, Python, MATLAB, COMSOL, LAMMPS, CFD-DEM, phase-field methods, CALPHAD, crystal plasticity, and Gaussian-process surrogate modeling. Author or co-author of 29 peer-reviewed publications with experience spanning university research, national-laboratory collaboration, and industrial R&D.
 
   social_networks:
     - network: LinkedIn
@@ -16,27 +16,28 @@ cv:
 
   sections:
     Experience:
-      - company: University of Michigan–Dearborn
+      - company: University of Michigan-Dearborn
         position: Assistant Research Scientist, Mechanical Engineering
         location: Dearborn, Michigan, USA
-        start_date: 2026
+        start_date: 2026-08
         end_date: present
         highlights:
-          - Develop multiscale and multiphysics computational frameworks for battery manufacturing and metal additive manufacturing.
-          - Integrate particle-resolved simulation, continuum transport, phase-field modeling, CALPHAD, scientific computing, and physics-informed machine learning.
-          - Develop process–structure–property models and computational acceleration strategies for engineering design and manufacturing optimization.
+          - Lead development of multiscale and multiphysics computational frameworks for battery manufacturing, additive manufacturing, and computational materials science.
+          - Integrate particle-resolved simulation, continuum heat and mass transport, phase-field modeling, CALPHAD, crystal plasticity, and machine-learning surrogate models into predictive engineering workflows.
+          - Translate manufacturing conditions into quantitative process-microstructure-performance relationships for process optimization and digital-twin applications.
+          - Collaborate across academia, industry, and national laboratories on federally sponsored advanced-manufacturing research.
 
-      - company: University of Michigan
-        position: Postdoctoral Researcher
-        location: Michigan, USA
+      - company: University of Michigan-Dearborn
+        position: Postdoctoral Researcher, Mechanical Engineering
+        location: Dearborn, Michigan, USA
         start_date: 2023-06
-        end_date: 2026
+        end_date: 2026-08
         highlights:
-          - Integrated machine-learning models with physics-based simulations to predict how particle-resolved 3D electrode microstructures affect lithium-battery discharge behavior using Python, EDEM, and COMSOL.
-          - Developed a double-electric-layer model to investigate conductive alignment in solid-state battery cathodes.
-          - Developed an FFT-based crystal-plasticity/phase-field framework to simulate recrystallization and gradient-grained microstructure evolution using Fortran and MATLAB.
-          - Developed a multiphysics model for ultrasonic healing in solid-state batteries using COMSOL.
-          - Developed a CALPHAD-informed phase-field framework for LPBF grain-structure prediction and Gaussian-process surrogate models achieving approximately 100x acceleration under the DARPA SURGE program.
+          - Developed a CALPHAD-informed phase-field framework for LPBF grain-structure prediction and integrated Gaussian-process classification/regression to accelerate thermodynamic evaluations by approximately 100x under the DARPA SURGE program.
+          - Built a multiscale battery-electrode manufacturing framework coupling particle-resolved modeling, heat transfer, fluid flow, mass transport, binder migration, and three-dimensional microstructure evolution.
+          - Integrated machine learning with physics-based simulations to predict the effect of particle-resolved 3D electrode microstructures on battery discharge behavior.
+          - Built an FFT-based crystal-plasticity/phase-field framework in Fortran and MATLAB to model recrystallization and gradient-grained microstructure evolution.
+          - Developed COMSOL multiphysics models for conductive alignment and ultrasonic healing in solid-state batteries in collaboration with experimental teams.
 
       - company: General Motors Technical Center, Research & Development
         position: Research Intern
@@ -44,9 +45,10 @@ cv:
         start_date: 2024-01
         end_date: 2025-09
         highlights:
-          - Developed coarse-grained molecular dynamics models for microstructure evolution and debonding in water-based cathode electrodes using LAMMPS.
-          - Developed coupled fluid-flow, heat-transfer, and mass-diffusion models to study polymer-binder migration and optimize electrode drying conditions using COMSOL.
-          - Contributed to a GM internal invention, peer-reviewed publications, conference work, and manufacturing-focused computational modeling workflows.
+          - Developed coarse-grained molecular-dynamics models in LAMMPS to predict cathode-electrode microstructure evolution and debonding during drying.
+          - Developed coupled fluid-flow, heat-transfer, and mass-diffusion models in COMSOL to quantify polymer-binder migration and optimize electrode drying conditions.
+          - Connected simulation predictions with manufacturing experiments and process conditions in an industry R&D environment.
+          - Contributed to a GM internal invention, peer-reviewed publications, conference work, and additional manuscript development.
 
       - company: Dalian University of Technology
         position: Ph.D. Researcher
@@ -54,14 +56,57 @@ cv:
         start_date: 2018-09
         end_date: 2022-06
         highlights:
-          - Developed phase-field models for laser powder bed fusion incorporating metal-powder particle characteristics to study process–microstructure relationships.
-          - Developed coupled CFD–DEM frameworks to quantify nozzle effects on powder flow and laser-energy attenuation in directed energy deposition.
-          - Established particle-aware LPBF heat-source models to predict melt-pool size and thermal history.
-          - Developed OpenMP-based Fortran phase-field code for 3D heterogeneous nucleation and grain-growth simulations.
+          - Developed particle-aware phase-field models for laser powder bed fusion to investigate process-microstructure relationships and grain evolution.
+          - Built coupled CFD-DEM frameworks to quantify nozzle effects on powder flow, particle transport, and laser-energy attenuation in directed energy deposition.
+          - Established laser-particle interaction heat-source models to predict melt-pool geometry and thermal history in LPBF.
+          - Developed OpenMP-parallelized Fortran code for large-scale 3D heterogeneous nucleation and grain-growth simulations.
+
+    Research Impact:
+      - name: Battery Manufacturing
+        summary: Multiscale modeling of electrode processing, drying, binder migration, and microstructure evolution.
+        highlights:
+          - Developed CGMD and multiphysics workflows connecting drying conditions to electrode structure and binder distribution.
+          - Collaborated with General Motors Technical Center and Pacific Northwest National Laboratory on DOE-supported battery-manufacturing research.
+          - Published battery-manufacturing research in Chemical Engineering Journal, Journal of Materials Processing Technology, and related venues.
+
+      - name: Additive Manufacturing & Digital Twins
+        summary: Physics-based and AI-accelerated prediction of solidification, grain structure, and process-structure relationships.
+        highlights:
+          - Developed CALPHAD-informed phase-field models for SS316L LPBF under the DARPA SURGE program.
+          - Built Gaussian-process surrogate models that reduced thermodynamic evaluation cost by approximately two orders of magnitude.
+          - Developed phase-field, CFD-DEM, and laser-particle interaction models across LPBF and directed energy deposition.
+
+      - name: Computational Materials & Scientific AI
+        summary: Development of reusable computational frameworks that combine mechanistic modeling with data-driven acceleration.
+        highlights:
+          - Coupled FFT crystal plasticity with phase-field modeling for recrystallization and gradient-grained materials.
+          - Applied Gaussian process regression/classification, uncertainty quantification, and physics-aware surrogate modeling.
+          - Developed scientific software in Fortran, Python, MATLAB, and multiphysics platforms for research-scale simulation.
+
+    Technical Skills:
+      - name: Computational Methods
+        level: Expert
+        icon: fa-solid fa-gears
+        keywords: "Multiphysics Modeling, Numerical Methods, Scientific Computing, Phase-Field Modeling, CFD-DEM, Molecular Dynamics, Crystal Plasticity, Heat & Mass Transfer, CALPHAD"
+
+      - name: Programming & HPC
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Fortran, Python, MATLAB, LAMMPS scripting, OpenMP, parallel computing, scientific data analysis"
+
+      - name: Engineering Software
+        level: Advanced
+        icon: fa-solid fa-laptop-code
+        keywords: "COMSOL Multiphysics, ANSYS Fluent, Abaqus/UMAT, FLOW-3D, LAMMPS, EDEM, Thermo-Calc"
+
+      - name: Physics-Informed AI
+        level: Advanced
+        icon: fa-solid fa-chart-line
+        keywords: "Gaussian Process Regression, Gaussian Process Classification, surrogate modeling, uncertainty quantification, physics-aware machine learning"
 
     Education:
-      - institution: University of Michigan
-        location: Michigan, USA
+      - institution: University of Michigan-Dearborn
+        location: Dearborn, Michigan, USA
         area: Mechanical Engineering
         studyType: Joint Ph.D. Research Program
         start_date: 2022-05
@@ -74,7 +119,7 @@ cv:
         start_date: 2018-09
         end_date: 2022-05
         highlights:
-          - "Dissertation: Numerical simulation of laser additive manufacturing based on metal powder particle characteristics"
+          - "Dissertation: Numerical Simulation of Laser Additive Manufacturing Based on Metal Powder Particle Characteristics"
 
       - institution: Dalian University of Technology
         location: Dalian, Liaoning, China
@@ -90,49 +135,69 @@ cv:
         start_date: 2012-09
         end_date: 2016-06
 
-    Skills:
-      - name: Computational Modeling
-        level: Expert
-        icon: fa-solid fa-gears
-        keywords: "Multiphysics Modeling, Numerical Methods, Scientific Computing, Phase-Field Modeling, CFD–DEM, Molecular Dynamics, Crystal Plasticity, Heat & Mass Transfer, CALPHAD"
+    Selected Publications:
+      - title: A Multiscale Computational Solution of Lithium-ion Battery Electrode Drying Process for 3D Electrode Structure with Binder Gradients
+        authors:
+          - X. Yao et al.
+        publisher: Chemical Engineering Journal
+        releaseDate: 2026
+        summary: Multiscale battery-manufacturing framework linking drying conditions, binder transport, and 3D electrode structure.
 
-      - name: Programming & HPC
-        level: Advanced
-        icon: fa-solid fa-code
-        keywords: "Fortran, Python, MATLAB, LAMMPS scripting, OpenMP, parallel computing"
+      - title: Enhancing Cathode Composites with Conductive Alignment Synergy for Solid-State Batteries
+        authors:
+          - Z. Cao#
+          - X. Yao#
+          - et al.
+        publisher: Science Advances
+        releaseDate: 2025
+        summary: "# Equal contribution; X. Yao led the simulation contribution."
 
-      - name: Engineering Software
-        level: Advanced
-        icon: fa-solid fa-laptop-code
-        keywords: "COMSOL Multiphysics, Abaqus/UMAT, FLOW-3D, ANSYS Fluent, LAMMPS, EDEM, Thermo-Calc"
+      - title: Tempo-Spatial Manipulation of Ultrasonics Toward Healing of Solid-State Batteries
+        authors:
+          - Y. Xiao#
+          - X. Yao#
+          - et al.
+        publisher: Advanced Energy Materials
+        releaseDate: 2025
+        summary: "# Equal contribution; X. Yao led the multiphysics simulation contribution."
 
-      - name: Physics-Informed AI
-        level: Advanced
-        icon: fa-solid fa-chart-line
-        keywords: "Gaussian Process Regression, Gaussian Process Classification, surrogate modeling, uncertainty quantification, physics-aware machine learning"
+      - title: Coarse-Grained Molecular Dynamics Simulations of Microstructure Evolution and Debonding in Water-Based Cathode Electrode Drying
+        authors:
+          - X. Yao et al.
+        publisher: Journal of Materials Processing Technology
+        releaseDate: 2023
 
-    Projects:
-      - name: DOE HPC4EI — Battery Electrode Drying
-        summary: HPC simulation of microstructure evolution during battery electrode drying in collaboration with General Motors Technical Center and Pacific Northwest National Laboratory.
+      - title: Three-dimensional Microstructure Evolution of Ti-6Al-4V during Multi-layer Printing — A Phase-field Simulation
+        authors:
+          - X. Yao
+          - X. Gao
+          - Z. Zhang
+        publisher: Journal of Materials Research and Technology
+        releaseDate: 2022
+
+      - title: Laser-Particle Interaction-Based Heat Source Model of Laser Powder Bed Fusion Additive Manufacturing
+        authors:
+          - X. Yao
+          - Z. Zhang
+        publisher: Optics & Laser Technology
+        releaseDate: 2022
+
+    Intellectual Property:
+      - name: Simulation Software & Patent Portfolio
+        summary: Three registered simulation software copyrights and co-inventorship on a U.S. patent related to solid-state battery ultrasonic healing.
         highlights:
-          - Multiscale battery manufacturing simulation
-          - Binder migration and particle-resolved microstructure
-          - Process optimization and model validation
+          - 3D Particle Model Generation Software Based on EDEM
+          - Phase-Field Simulation Software for Selective Laser Sintering
+          - Parallel Computing Program for Grain Growth Phase-Field Modeling
+          - U.S. patent publication US 2025/0266420 A1 — co-inventor
 
-      - name: DARPA SURGE — Metallic Endurance Digital Twin
-        summary: Physics-based phase-field and CALPHAD modeling for SS316L LPBF microstructure prediction and digital-twin/data-library development.
-        highlights:
-          - CALPHAD-informed solidification modeling
-          - Gaussian-process surrogate modeling
-          - Approximately 100x acceleration of thermodynamic evaluations
-
-    Awards:
+    Awards & Recognition:
       - title: Institute for Energy Solutions Fellow
         authors:
           - University of Michigan
         date: 2026
         awarder: University of Michigan
-        summary: Funded fellowship recognizing energy-related research.
+        summary: Funded fellowship recognizing interdisciplinary energy research.
 
       - title: Outstanding Doctoral Dissertation
         authors:
@@ -154,75 +219,23 @@ cv:
         awarder: Dalian University of Technology
         summary: Ranked 3 of 201.
 
-    Publications:
-      - title: A Multiscale Computational Solution of Lithium-ion Battery Electrode Drying Process for 3D Electrode Structure with Binder Gradients
-        authors:
-          - X. Yao et al.
-        publisher: Chemical Engineering Journal
-        releaseDate: 2026
-
-      - title: Enhancing Cathode Composites with Conductive Alignment Synergy for Solid-State Batteries
-        authors:
-          - Z. Cao
-          - X. Yao
-          - et al.
-        publisher: Science Advances
-        releaseDate: 2025
-        summary: Co-first author; simulation contribution.
-
-      - title: Tempo-Spatial Manipulation of Ultrasonics Toward Healing of Solid-State Batteries
-        authors:
-          - Y. Xiao
-          - X. Yao
-          - et al.
-        publisher: Advanced Energy Materials
-        releaseDate: 2024
-        summary: Co-first author; simulation contribution.
-
-      - title: Coarse-Grained Molecular Dynamics Simulations of Microstructure Evolution and Debonding in Water-Based Cathode Electrode Drying
-        authors:
-          - X. Yao et al.
-        publisher: Journal of Materials Processing Technology
-        releaseDate: 2023
-
-      - title: Laser-Particle Interaction-Based Heat Source Model of Laser Powder Bed Fusion Additive Manufacturing
-        authors:
-          - X. Yao
-          - Z. Zhang
-        publisher: Optics & Laser Technology
-        releaseDate: 2022
-
-      - title: Experimental and Numerical Studies of Nozzle Effect on Powder Flow Behaviors in Directed Energy Deposition Additive Manufacturing
-        authors:
-          - X. Yao et al.
-        publisher: International Journal of Mechanical Sciences
-        releaseDate: 2021
-
-    Intellectual Property:
-      - name: Simulation Software & Patent Portfolio
-        summary: Three registered simulation software copyrights and co-inventor on a U.S. patent related to solid-state battery ultrasonic healing.
-        highlights:
-          - 3D Particle Model Generation Software Based on EDEM
-          - Phase-Field Simulation Software for Selective Laser Sintering
-          - Parallel Computing Program for Grain Growth Phase-Field Modeling
-          - Co-inventor on U.S. patent US 2025/0266420 A1
-
     Professional Service:
       - name: Peer Review
-        summary: Served as a peer reviewer for 41 manuscripts across journals in manufacturing, energy storage, thermal science, and computational engineering.
+        summary: Completed 41 manuscript reviews across journals in manufacturing, energy storage, thermal science, and computational engineering.
         highlights:
           - Journal of Manufacturing Processes
-          - Journal of Energy Storage
           - Additive Manufacturing
-          - Aerospace Science and Technology
+          - Journal of Energy Storage
           - Applied Thermal Engineering
+          - Aerospace Science and Technology
           - Optics & Laser Technology
 
     Presentations:
-      - name: Selected Oral Presentations
-        summary: Presented computational manufacturing research at major engineering and materials conferences.
+      - name: Selected Conference Presentations
+        summary: Presented computational manufacturing and materials research at major engineering and materials conferences.
         highlights:
-          - TMS 2025 Annual Meeting & Exhibition
-          - ASME MSEC 2025
-          - 53rd SME North American Manufacturing Research Conference (NAMRC 2025)
-          - TMS 2026
+          - Cell Symposia: Electric Vehicles 2024 — computational modeling of battery electrode drying
+          - TMS 2025 Annual Meeting & Exhibition — FFT crystal plasticity and phase-field modeling of gradient-grained metals
+          - ASME MSEC 2025 — large-scale phase-field simulation for pouch-cell manufacturing
+          - NAMRC 2025 — coarse-grained molecular dynamics modeling of lithium-ion battery electrode drying
+          - TMS 2026 — additive-manufacturing and computational materials research
