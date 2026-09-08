@@ -1,15 +1,14 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+permalink: /presentations/
+title: presentations
+description: Selected conference presentations, invited talks, seminars, and research presentations by Xinxin Yao.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 4
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+## Presentations
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+Selected conference presentations, invited talks, seminars, and research presentations related to **battery manufacturing**, **additive manufacturing**, **computational materials science**, and **physics-informed AI**.
 
-{% include courses.liquid %}
+A detailed presentation list will be maintained here alongside my publication and project records.
