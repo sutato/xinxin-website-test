@@ -30,3 +30,5 @@ The complete list below includes the selected publications above together with a
 {% bibliography %}
 
 </div>
+
+<!-- Author highlighting is configured for Xinxin Yao. -->
