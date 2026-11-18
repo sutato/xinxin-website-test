@@ -26,13 +26,16 @@ Selected conference presentations, invited talks, seminars, and research present
   TMS 2025 Annual Meeting & Exhibition, March 23–27, 2025, Las Vegas, NV, USA. **Oral presentation.**
 
 <div class="row mt-3 mb-4">
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/tms2025-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao giving an oral presentation at TMS 2025" loading="lazy">
+  </div>
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2025-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao with collaborators after the TMS 2025 oral presentation" loading="lazy">
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2025-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao at the TMS 2025 Annual Meeting and Exhibition" loading="lazy">
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2025-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao in Las Vegas during TMS 2025" loading="lazy">
   </div>
 </div>
