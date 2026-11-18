@@ -1,9 +1,9 @@
 {
   "education": [
     {
-      "institution": "University of Michigan–Dearborn, Dearborn, MI, USA",
-      "location": "Dearborn, MI, USA",
-      "url": "https://umdearborn.edu/cecs/departments/mechanical-engineering",
+      "institution": "University of Michigan, MI, USA",
+      "location": "Michigan, USA",
+      "url": "https://umich.edu/",
       "studyType": "Joint Ph.D. Research in Mechanical Engineering",
       "startDate": "2022-05-01",
       "endDate": "2023-06-30"
@@ -35,17 +35,17 @@
   ],
   "work": [
     {
-      "name": "University of Michigan–Dearborn",
+      "name": "University of Michigan",
       "position": "Assistant Research Scientist, Mechanical Engineering",
-      "url": "https://umdearborn.edu/cecs/departments/mechanical-engineering",
+      "url": "https://umich.edu/",
       "startDate": "2026-08-01",
       "endDate": "",
       "summary": "Developing physics-based and AI-accelerated computational models for battery manufacturing, additive manufacturing, and process–structure–property prediction."
     },
     {
-      "name": "University of Michigan–Dearborn",
+      "name": "University of Michigan",
       "position": "Postdoctoral Researcher, Mechanical Engineering",
-      "url": "https://umdearborn.edu/cecs/departments/mechanical-engineering",
+      "url": "https://umich.edu/",
       "startDate": "2023-06-01",
       "endDate": "2026-08-01",
       "summary": "Developed multiscale battery-manufacturing models, CALPHAD-informed phase-field simulations, FFT crystal plasticity, and Gaussian-process surrogate models with approximately 100× computational acceleration."

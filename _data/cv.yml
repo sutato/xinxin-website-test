@@ -24,7 +24,7 @@ cv:
         end_date: 2022-05
         highlights:
           - "Dissertation: Numerical Simulation of Laser Additive Manufacturing Based on Metal Powder Particle Characteristics"
-          - Joint doctoral research at University of Michigan-Dearborn, 2022-05 to 2023-06.
+          - Joint doctoral research at University of Michigan, 2022-05 to 2023-06.
 
       - institution: Dalian University of Technology
         location: Dalian, Liaoning, China
@@ -41,9 +41,9 @@ cv:
         end_date: 2016-06
 
     Work Experience:
-      - company: University of Michigan-Dearborn
+      - company: University of Michigan
         position: Assistant Research Scientist, Mechanical Engineering
-        location: Dearborn, Michigan, USA
+        location: Michigan, USA
         start_date: 2026-08
         end_date: present
         highlights:
@@ -51,9 +51,9 @@ cv:
           - Combine phase-field modeling, CALPHAD, particle-resolved simulation, continuum transport, crystal plasticity, and machine-learning surrogate models.
           - Build predictive process–structure–property relationships for manufacturing optimization and digital-twin applications.
 
-      - company: University of Michigan-Dearborn
+      - company: University of Michigan
         position: Postdoctoral Researcher, Mechanical Engineering
-        location: Dearborn, Michigan, USA
+        location: Michigan, USA
         start_date: 2023-06
         end_date: 2026-08
         highlights:
