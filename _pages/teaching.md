@@ -27,16 +27,16 @@ Selected conference presentations, invited talks, seminars, and research present
 
 <div class="row mt-3 mb-4">
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/tms2025-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao giving an oral presentation at TMS 2025" loading="lazy">
+    <img src="{{ '/assets/img/presentations/tms2025-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao giving an oral presentation at TMS 2025" loading="lazy">
   </div>
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/tms2025-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao with collaborators after the TMS 2025 oral presentation" loading="lazy">
+    <img src="{{ '/assets/img/presentations/tms2025-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with collaborators after the TMS 2025 oral presentation" loading="lazy">
   </div>
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/tms2025-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao at the TMS 2025 Annual Meeting and Exhibition" loading="lazy">
+    <img src="{{ '/assets/img/presentations/tms2025-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao at the TMS 2025 Annual Meeting and Exhibition" loading="lazy">
   </div>
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/tms2025-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao in Las Vegas during TMS 2025" loading="lazy">
+    <img src="{{ '/assets/img/presentations/tms2025-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao in Las Vegas during TMS 2025" loading="lazy">
   </div>
 </div>
 <div class="caption">TMS 2025 Annual Meeting &amp; Exhibition, Las Vegas, March 2025.</div>
