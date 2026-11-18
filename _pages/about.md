@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Assistant Research Scientist · Mechanical Engineering · University of Michigan–Dearborn
+subtitle: Assistant Research Scientist · Mechanical Engineering · University of Michigan
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Ann Arbor, Michigan</p>
-    <p>University of Michigan–Dearborn</p>
+    <p>University of Michigan</p>
 
 selected_papers: true
 social: true
@@ -26,7 +26,7 @@ latest_posts:
   limit: 3
 ---
 
-I am an **Assistant Research Scientist in Mechanical Engineering at the University of Michigan–Dearborn**. My research focuses on computational modeling and physics-informed artificial intelligence for advanced manufacturing, with particular interests in **lithium-ion battery manufacturing** and **metal additive manufacturing**.
+I am an **Assistant Research Scientist in Mechanical Engineering at the University of Michigan**. My research focuses on computational modeling and physics-informed artificial intelligence for advanced manufacturing, with particular interests in **lithium-ion battery manufacturing** and **metal additive manufacturing**.
 
 My work aims to connect **manufacturing process → microstructure → material performance** through multiscale and multiphysics simulation. I develop computational frameworks combining particle-resolved modeling, continuum transport, phase-field methods, CALPHAD, crystal plasticity, scientific computing, and machine-learning-based surrogate models.
 
