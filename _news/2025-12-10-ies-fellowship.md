@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Honored to be selected as a **2026 Fellow** of the [University of Michigan Institute for Energy Solutions (IES)](https://energy.umich.edu/) PhD and Postdoctoral Fellowship Program. :tada:
+Honored to be selected as a **2026 Fellow** of the [University of Michigan Institute for Energy Solutions (IES)](https://ies.engin.umich.edu/for-students/ies-graduate-student-fellowship-program) PhD and Postdoctoral Fellowship Program. :tada:
