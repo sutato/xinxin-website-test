@@ -25,6 +25,19 @@ Selected conference presentations, invited talks, seminars, and research present
 - **X. Yao**, et al. _Integration of Phase-Field Model and Fast Fourier Transform-Based Crystal Plasticity with Geometrically Necessary Dislocations to Simulate Microstructure Evolution During the Manufacturing of Gradient-Grained Metals._
   TMS 2025 Annual Meeting & Exhibition, March 23–27, 2025, Las Vegas, NV, USA. **Oral presentation.**
 
+<div class="row mt-3 mb-4">
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/tms2025-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao with collaborators after the TMS 2025 oral presentation" loading="lazy">
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/tms2025-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao at the TMS 2025 Annual Meeting and Exhibition" loading="lazy">
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/tms2025-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Xinxin Yao in Las Vegas during TMS 2025" loading="lazy">
+  </div>
+</div>
+<div class="caption">TMS 2025 Annual Meeting &amp; Exhibition, Las Vegas, March 2025.</div>
+
 ### 2024
 
 - **X. Yao**, et al. _Computational Modeling of Battery Electrode Drying._
