@@ -101,7 +101,15 @@
     {
       "name": "Computational Modeling",
       "icon": "fa-solid fa-gears",
-      "keywords": ["Multiphysics Modeling", "Phase-Field Modeling", "CFD–DEM", "Molecular Dynamics", "Crystal Plasticity", "Heat & Mass Transfer", "CALPHAD"]
+      "keywords": [
+        "Multiphysics Modeling",
+        "Phase-Field Modeling",
+        "CFD–DEM",
+        "Molecular Dynamics",
+        "Crystal Plasticity",
+        "Heat & Mass Transfer",
+        "CALPHAD"
+      ]
     },
     {
       "name": "Battery Manufacturing",
@@ -116,7 +124,13 @@
     {
       "name": "Physics-Informed AI",
       "icon": "fa-solid fa-brain",
-      "keywords": ["Gaussian Process Regression", "Gaussian Process Classification", "Surrogate Modeling", "Uncertainty Quantification", "Scientific Machine Learning"]
+      "keywords": [
+        "Gaussian Process Regression",
+        "Gaussian Process Classification",
+        "Surrogate Modeling",
+        "Uncertainty Quantification",
+        "Scientific Machine Learning"
+      ]
     },
     {
       "name": "Programming Languages",
