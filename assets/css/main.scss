@@ -1,0 +1,31 @@
+---
+# Local override of al_folio_core's assets/css/main.scss (v1.0.15).
+# Identical to the gem's file except for the accent colors passed to "variables".
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }},
+  $purple-color: #1f5fa8,
+  $cyan-color: #5b9bd5
+);
+
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
