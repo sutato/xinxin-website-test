@@ -19,7 +19,7 @@ A curated selection of representative work most closely aligned with my current 
 
 </div>
 
-<p><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
+<p class="co-first-note"><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
 
 ## Complete publication list
 
@@ -33,47 +33,4 @@ The complete list below includes the selected publications above together with a
 
 </div>
 
-<script>
-  (() => {
-    const coFirstPapers = {
-      cao2025fast: 'Zhang Cao',
-      xiao2025ultrasonics: 'Yaohong Xiao',
-    };
-
-    Object.entries(coFirstPapers).forEach(([paperId, firstAuthor]) => {
-      document.querySelectorAll(`[id="${paperId}"] .author`).forEach((authorLine) => {
-        const firstTextNode = Array.from(authorLine.childNodes).find(
-          (node) => node.nodeType === Node.TEXT_NODE && node.textContent.includes(firstAuthor),
-        );
-
-        if (firstTextNode) {
-          const text = firstTextNode.textContent;
-          const index = text.indexOf(firstAuthor);
-          const fragment = document.createDocumentFragment();
-          fragment.append(document.createTextNode(text.slice(0, index)));
-
-          const highlightedAuthor = document.createElement('em');
-          highlightedAuthor.className = 'co-first-author';
-          highlightedAuthor.textContent = firstAuthor;
-          fragment.append(highlightedAuthor);
-
-          const marker = document.createElement('sup');
-          marker.textContent = '†';
-          fragment.append(marker);
-          fragment.append(document.createTextNode(text.slice(index + firstAuthor.length)));
-          firstTextNode.replaceWith(fragment);
-        }
-
-        const xinxin = Array.from(authorLine.querySelectorAll('em')).find(
-          (element) => element.textContent.trim() === 'Xinxin Yao',
-        );
-        if (xinxin && !xinxin.nextElementSibling?.classList.contains('co-first-marker')) {
-          const marker = document.createElement('sup');
-          marker.className = 'co-first-marker';
-          marker.textContent = '†';
-          xinxin.insertAdjacentElement('afterend', marker);
-        }
-      });
-    });
-  })();
-</script>
+<script defer src="{{ '/assets/js/co-first-authors.js' | relative_url }}"></script>

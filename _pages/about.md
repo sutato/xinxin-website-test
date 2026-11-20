@@ -40,3 +40,5 @@ My work aims to connect **manufacturing process → microstructure → material 
 My research has involved collaborations with **General Motors Global R&D**, **Pacific Northwest National Laboratory**, the **University of Michigan**, **Texas A&M University**, and federally sponsored advanced-manufacturing programs.
 
 I am interested in research and industry opportunities involving **computational science, battery R&D, modeling & simulation, and advanced manufacturing**.
+
+<script defer src="{{ '/assets/js/co-first-authors.js' | relative_url }}"></script>
