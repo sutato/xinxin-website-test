@@ -19,7 +19,7 @@ A curated selection of representative work most closely aligned with my current 
 
 </div>
 
-<p class="co-first-note"><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
+<p><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
 
 ## Complete publication list
 
@@ -32,5 +32,3 @@ The complete list below includes the selected publications above together with a
 {% bibliography %}
 
 </div>
-
-<script defer src="{{ '/assets/js/co-first-authors.js' | relative_url }}"></script>
