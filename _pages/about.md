@@ -23,7 +23,7 @@ latest_posts:
   limit: 3
 ---
 
-I am an Assistant Research Scientist in the Department of Mechanical Engineering at the University of Michigan–Dearborn. My research focuses on developing physics-based and AI-accelerated computational frameworks to understand and optimize advanced manufacturing processes, with an emphasis on battery electrode manufacturing and metal additive manufacturing.
+I am an Assistant Research Scientist in the Department of Mechanical Engineering at the University of Michigan. My research focuses on developing physics-based and AI-accelerated computational frameworks to understand and optimize advanced manufacturing processes, with an emphasis on battery electrode manufacturing and metal additive manufacturing.
 
 My work integrates multiscale modeling, multiphysics simulations, and machine learning to establish quantitative relationships between manufacturing processes, microstructure evolution, and material performance. I have developed computational approaches spanning particle-scale interactions, continuum transport, solidification and grain evolution, and data-driven surrogate modeling.
 
