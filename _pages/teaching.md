@@ -16,6 +16,19 @@ Selected conference presentations, invited talks, seminars, and research present
 - **X. Yao**, et al. _A Gaussian Process-Assisted Phase-Field Framework for Physics-Informed Prediction of Grain Structure Evolution in Laser Powder Bed Fusion._
   TMS Specialty Congress 2026, July 6–10, 2026, Anaheim, CA, USA. **Oral presentation.**
 
+<div class="row mt-3 mb-4">
+  <div class="col-4">
+    <img src="{{ '/assets/img/presentations/tms2026-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with a colleague after the TMS Specialty Congress 2026 oral presentation" loading="lazy">
+  </div>
+  <div class="col-4">
+    <img src="{{ '/assets/img/presentations/tms2026-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with a colleague in front of the TMS banner at the TMS Specialty Congress 2026" loading="lazy">
+  </div>
+  <div class="col-4">
+    <img src="{{ '/assets/img/presentations/tms2026-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with collaborators at the TMS Specialty Congress 2026" loading="lazy">
+  </div>
+</div>
+<div class="caption">TMS Specialty Congress 2026, Anaheim, July 2026.</div>
+
 ### 2025
 
 - **X. Yao**, et al. _Coarse-Grained Molecular Dynamics Modelling of Lithium-Ion Battery Electrode Drying: A Sensitivity Analysis._
