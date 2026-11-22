@@ -26,6 +26,9 @@ Selected conference presentations, invited talks, seminars, and research present
   <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2026-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with collaborators at the TMS Specialty Congress 2026" loading="lazy">
   </div>
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/tms2026-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao at the Hollywood sign in Los Angeles during the TMS Specialty Congress 2026" loading="lazy">
+  </div>
 </div>
 <div class="caption">TMS Specialty Congress 2026, Anaheim, July 2026.</div>
 
