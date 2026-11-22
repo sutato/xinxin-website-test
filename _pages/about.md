@@ -29,18 +29,25 @@ I am an **Assistant Research Scientist in Mechanical Engineering at the Universi
 
 - **29 peer-reviewed journal articles**, including **12 as first or co-first author** (10 first-author, 2 co-first<sup>†</sup>), plus 1 first-author ASME MSEC conference paper
 - **Selected venues:** _Science Advances_<sup>†</sup>, _Advanced Energy Materials_<sup>†</sup>, _Acta Materialia_, _Energy Storage Materials_, _Advanced Science_, _Chemical Engineering Journal_
-- **Collaborations:** General Motors Global R&D, Pacific Northwest National Laboratory, Texas A&M University, and federally sponsored advanced-manufacturing programs
+- **Collaborations:** General Motors Global R&D, Pacific Northwest National Laboratory, and the DARPA SURGE program with Texas A&M University and AlphaSTAR
 - **Methods:** phase-field, CALPHAD, crystal plasticity, CFD–DEM, coarse-grained molecular dynamics, and Gaussian-process surrogate modeling with uncertainty quantification
 
 <small><sup>†</sup> Equal contribution (co-first author).</small>
 
-My work aims to connect **manufacturing process → microstructure → material performance** through multiscale and multiphysics simulation. I develop computational frameworks combining particle-resolved modeling, continuum transport, phase-field methods, CALPHAD, crystal plasticity, scientific computing, and machine-learning-based surrogate models.
+### Research projects
 
-### Research interests
+My work connects **manufacturing process → microstructure → material performance**, so that process settings can be chosen from physics rather than trial and error.
 
-- **Battery manufacturing:** electrode slurry processing, drying, binder migration, microstructure evolution, and process optimization
-- **Additive manufacturing:** solidification, grain growth, columnar-to-equiaxed transition, and process–structure relationships
-- **Computational materials science:** phase-field modeling, crystal plasticity, CFD–DEM, coarse-grained molecular dynamics, and multiscale modeling
-- **Physics-informed AI:** Gaussian process classification/regression, uncertainty quantification, and surrogate modeling for computational acceleration
+**Battery electrode manufacturing** — _drying, multiscale modeling, and process optimization under industrial conditions_<br>
+Drying conditions decide whether an electrode ends up with uniform binder distribution or with binder gradients, cracking, and debonding. I build multiscale models, from coarse-grained molecular dynamics of particles and binder up to continuum heat and mass transport, that predict how roll-to-roll and laser-assisted drying shape the final 3D electrode structure. These models give manufacturers a physics-based way to select drying settings and anticipate electrode quality. Conducted with General Motors Global R&D.<br>
+Related projects: [electrode drying]({{ '/projects/1_project/' | relative_url }}) · [coarse-grained MD]({{ '/projects/5_project/' | relative_url }}) · [solid-state batteries]({{ '/projects/3_project/' | relative_url }})
+
+**Metal additive manufacturing** — _solidification, grain selection, phase-field simulation, and ML acceleration_<br>
+Grain structure controls the strength and anisotropy of printed metal parts, but predicting it is computationally expensive. I couple CALPHAD thermodynamics, phase-field solidification, and Gaussian-process surrogates to predict grain selection and the columnar-to-equiaxed transition in laser powder bed fusion, reducing expensive thermodynamic evaluations by roughly two orders of magnitude while preserving the key solidification physics. This builds on the CFD–DEM powder-flow and laser–particle interaction models from my doctoral work. DARPA SURGE collaboration with Texas A&M University and AlphaSTAR.<br>
+Related projects: [ML-accelerated grain prediction]({{ '/projects/2_project/' | relative_url }}) · [powder flow and thermal modeling]({{ '/projects/6_project/' | relative_url }})
+
+**Computational framework development** — _multiphysics, physics-informed AI, and high-performance computing_<br>
+Across both areas I develop simulation frameworks that can be reused for new materials and processes: coupled FFT crystal-plasticity and phase-field solvers for recrystallization, electro-chemo-mechanical models for solid-state batteries, large-scale phase-field simulation for pouch-cell pressure optimization, and machine-learning surrogates that turn expensive simulations into fast design tools. Tools: Fortran, Python, MATLAB, LAMMPS, COMSOL, and parallel computing.<br>
+Related projects: [crystal plasticity + phase field]({{ '/projects/4_project/' | relative_url }}) · [solid-state battery multiphysics]({{ '/projects/3_project/' | relative_url }})
 
 I am interested in research and industry opportunities involving **computational science, battery R&D, modeling & simulation, and advanced manufacturing**.
