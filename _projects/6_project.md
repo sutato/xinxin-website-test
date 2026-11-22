@@ -2,8 +2,9 @@
 layout: page
 title: Powder Flow and Thermal Modeling in Metal Additive Manufacturing
 description: CFD–DEM, laser–particle interaction, and thermal modeling for DED and LPBF process–structure prediction.
-importance: 6
-category: research
+importance: 2
+category: metal additive manufacturing
+methods: [CFD–DEM, Laser–particle interaction, Thermal modeling]
 related_publications: true
 ---
 

@@ -2,8 +2,9 @@
 layout: page
 title: Coarse-Grained Molecular Dynamics for Electrode Manufacturing
 description: Particle-scale simulation of cathode microstructure evolution, interfacial debonding, and solvent-dependent drying behavior.
-importance: 5
-category: research
+importance: 2
+category: battery manufacturing
+methods: [Coarse-grained MD, Microstructure analysis]
 related_publications: true
 ---
 

@@ -3,7 +3,8 @@ layout: page
 title: Solid-State Battery Multiphysics
 description: Computational models for conductive alignment, ultrasonic healing, and electro-chemo-mechanical behavior in solid-state batteries.
 importance: 3
-category: research
+category: battery manufacturing
+methods: [Multiphysics, Electrochemistry, Mechanics]
 related_publications: true
 ---
 

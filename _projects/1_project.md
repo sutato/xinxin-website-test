@@ -3,7 +3,8 @@ layout: page
 title: Multiscale Battery Electrode Drying
 description: Particle-resolved and multiphysics modeling of solvent transport, binder migration, and 3D electrode microstructure evolution.
 importance: 1
-category: research
+category: battery manufacturing
+methods: [Multiscale modeling, Coarse-grained MD, Heat & mass transport]
 related_publications: true
 ---
 

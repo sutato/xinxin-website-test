@@ -2,8 +2,9 @@
 layout: page
 title: FFT Crystal Plasticity + Phase Field
 description: Coupled simulation of recrystallization and gradient-grained microstructure evolution driven by deformation and GND fields.
-importance: 4
-category: research
+importance: 3
+category: metal additive manufacturing
+methods: [Crystal plasticity, Phase-field, Parallel computing]
 related_publications: true
 ---
 

@@ -2,8 +2,9 @@
 layout: page
 title: Physics-Informed AI for LPBF Grain Prediction
 description: CALPHAD-informed phase-field modeling accelerated by Gaussian-process classification and regression for metal additive manufacturing.
-importance: 2
-category: research
+importance: 1
+category: metal additive manufacturing
+methods: [CALPHAD, Phase-field, Physics-informed AI, Uncertainty quantification]
 related_publications: true
 ---
 
