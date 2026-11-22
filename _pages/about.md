@@ -32,7 +32,7 @@ Through collaborations with academic institutions, national laboratories, and in
 ### Research highlights
 
 - **29 peer-reviewed journal articles**, including **12 as first or co-first author** (10 first-author, 2 co-first<sup>†</sup>), plus 1 first-author ASME MSEC conference paper
-- **Selected venues:** _Science Advances_<sup>†</sup>, _Advanced Energy Materials_<sup>†</sup>, _Acta Materialia_, _Energy Storage Materials_, _Advanced Science_, _Chemical Engineering Journal_
+- **Selected venues:** _Science Advances_<sup>†</sup>, _Advanced Energy Materials_<sup>†</sup>, _Acta Materialia_, _Energy Storage Materials_, _International Journal of Mechanical Sciences_, _Chemical Engineering Journal_
 - **Collaborations:** General Motors Global R&D, Pacific Northwest National Laboratory, and the DARPA SURGE program with Texas A&M University and AlphaSTAR
 - **Methods:** phase-field, CALPHAD, crystal plasticity, CFD–DEM, coarse-grained molecular dynamics, and Gaussian-process surrogate modeling with uncertainty quantification
 

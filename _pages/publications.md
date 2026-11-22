@@ -23,7 +23,7 @@ A curated selection of representative work most closely aligned with my current 
 
 ## Complete publication list
 
-The complete list below includes the selected publications above together with additional journal articles, conference papers, and preprints. Use the search box to quickly find papers by topic, title, venue, or year.
+The complete list below includes the selected publications above together with additional journal articles and conference papers. Use the search box to quickly find papers by topic, title, venue, or year.
 
 {% include bib_search.liquid %}
 
