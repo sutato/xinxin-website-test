@@ -40,8 +40,6 @@ Through collaborations with academic institutions, national laboratories, and in
 
 ### Research projects
 
-My work connects **manufacturing process → microstructure → material performance**, so that process settings can be chosen from physics rather than trial and error.
-
 **Battery electrode manufacturing** — _drying, multiscale modeling, and process optimization under industrial conditions_<br>
 Drying conditions decide whether an electrode ends up with uniform binder distribution or with binder gradients, cracking, and debonding. I build multiscale models, from coarse-grained molecular dynamics of particles and binder up to continuum heat and mass transport, that predict how roll-to-roll and laser-assisted drying shape the final 3D electrode structure. These models give manufacturers a physics-based way to select drying settings and anticipate electrode quality. Conducted with General Motors Global R&D.<br>
 Related projects: [electrode drying]({{ '/projects/1_project/' | relative_url }}) · [coarse-grained MD]({{ '/projects/5_project/' | relative_url }}) · [solid-state batteries]({{ '/projects/3_project/' | relative_url }})
