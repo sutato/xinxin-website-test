@@ -17,13 +17,13 @@ Selected conference presentations, invited talks, seminars, and research present
   TMS Specialty Congress 2026, July 6–10, 2026, Anaheim, CA, USA. **Oral presentation.**
 
 <div class="row mt-3 mb-4">
-  <div class="col-4">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2026-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with a colleague after the TMS Specialty Congress 2026 oral presentation" loading="lazy">
   </div>
-  <div class="col-4">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2026-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with a colleague in front of the TMS banner at the TMS Specialty Congress 2026" loading="lazy">
   </div>
-  <div class="col-4">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
     <img src="{{ '/assets/img/presentations/tms2026-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao with collaborators at the TMS Specialty Congress 2026" loading="lazy">
   </div>
 </div>
