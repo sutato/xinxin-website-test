@@ -47,10 +47,10 @@ Selected conference presentations, invited talks, seminars, and research present
     <img src="{{ '/assets/img/presentations/msec-namrc53-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Q&amp;A session after Xinxin Yao's talk at NAMRC 53 / MSEC 2025" loading="lazy">
   </div>
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/msec-namrc53-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao in downtown Greenville at night during NAMRC 53 / MSEC 2025" loading="lazy">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Colleagues in front of the NAMRC 53 / MSEC 2025 banner" loading="lazy">
   </div>
   <div class="col-6 col-md-3 mt-3 mt-md-0">
-    <img src="{{ '/assets/img/presentations/msec-namrc53-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Colleagues in front of the NAMRC 53 / MSEC 2025 banner" loading="lazy">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao in downtown Greenville at night during NAMRC 53 / MSEC 2025" loading="lazy">
   </div>
 </div>
 <div class="caption">NAMRC 53 / MSEC 2025, Greenville, June 2025.</div>
