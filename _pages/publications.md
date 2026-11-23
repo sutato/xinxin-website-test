@@ -7,11 +7,9 @@ nav: true
 nav_order: 2
 ---
 
-My research spans **battery manufacturing**, **additive manufacturing**, **computational materials science**, and **physics-informed AI**. For citation metrics and the most up-to-date publication record, please visit my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ).
+Full record and citation metrics on [Google Scholar](https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ).
 
 ## Selected publications
-
-Representative work in my two research thrusts.
 
 ### Battery manufacturing
 
@@ -29,11 +27,7 @@ Representative work in my two research thrusts.
 
 </div>
 
-<p><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
-
 ## Complete publication list
-
-The complete list includes the selected publications above together with additional journal articles and conference papers. Browse by research area or by year, or use the search box to find papers by topic, title, venue, or year.
 
 <div class="pub-view-toggle btn-group mb-3" role="group" aria-label="Organize publications by">
   <button type="button" class="btn btn-sm btn-outline-primary active" data-pub-view="area" aria-pressed="true">Research area</button>
@@ -72,7 +66,13 @@ The complete list includes the selected publications above together with additio
 
 </div>
 
+<p class="mt-4"><small><sup>†</sup> Equal contribution (co-first authors).</small></p>
+
 <style>
+  /* Thumbnails only in Selected publications; keep the complete list compact. */
+  .pub-view .preview {
+    display: none;
+  }
   .pub-view-toggle .btn {
     min-width: 7.5rem;
   }
