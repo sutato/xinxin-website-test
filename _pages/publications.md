@@ -30,10 +30,10 @@ nav_order: 2
 <p class="pub-empty-note text-muted" hidden>No publications match the current filter and search.</p>
 
 {% comment %}
-  Area and "selected" flags live only in _bibliography/papers.bib (fields `area` and `selected`).
-  The gem's entry template does not expose custom fields, so the matching entry keys are rendered
-  into inert text/html blocks below. They are never shown, searched, or loaded as images; the
-  script only reads the entry ids out of them.
+Area and "selected" flags live only in _bibliography/papers.bib (fields `area` and `selected`).
+The gem's entry template does not expose custom fields, so the matching entry keys are rendered
+into inert text/html blocks below. They are never shown, searched, or loaded as images; the
+script only reads the entry ids out of them.
 {% endcomment %}
 
 <script type="text/html" id="pub-keys-battery">
