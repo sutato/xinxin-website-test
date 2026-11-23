@@ -110,8 +110,21 @@ reads the entry ids out of them.
     background: none;
     color: inherit;
     font: inherit;
-    text-decoration: underline dotted;
+    text-decoration: none;
     cursor: pointer;
+  }
+  .pub-list .pub-more:hover {
+    color: var(--global-theme-color);
+  }
+  /* Owner's name: bold instead of the theme's italic highlight. */
+  .pub-list .author em {
+    font-style: normal;
+    font-weight: 700;
+  }
+  .pub-count {
+    margin-left: 0.35em;
+    font-size: 0.8em;
+    opacity: 0.65;
   }
   .pub-star {
     color: var(--global-theme-color);
@@ -233,6 +246,17 @@ reads the entry ids out of them.
       b.addEventListener("click", function () {
         applyFilter(b.getAttribute("data-pub-filter"));
       });
+    });
+
+    // Paper count on each filter button.
+    var total = document.querySelectorAll(".pub-list .bibliography > li").length;
+    document.querySelectorAll("[data-pub-filter]").forEach(function (b) {
+      var f = b.getAttribute("data-pub-filter");
+      var n = f === "all" ? total : Object.keys(areas[f] || {}).length;
+      var c = document.createElement("span");
+      c.className = "pub-count";
+      c.textContent = n;
+      b.appendChild(c);
     });
 
     applyFilter("all");
