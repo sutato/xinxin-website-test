@@ -23,7 +23,7 @@ nav_order: 2
 
 <div class="publications pub-list">
 
-{% bibliography %}
+{% bibliography --group_by none %}
 
 </div>
 
@@ -82,13 +82,23 @@ script only reads the entry ids out of them.
   .pub-list ol.bibliography li {
     margin-bottom: 0.75rem;
   }
+  /* The title links to the DOI, so the separate DOI button row is not needed. */
+  .pub-list .links {
+    display: none;
+  }
+  .pub-list .title a {
+    color: inherit;
+  }
+  .pub-list .title a:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
   .pub-star {
     color: var(--global-theme-color);
     font-size: 0.85em;
     margin-right: 0.3em;
   }
-  .pub-list .pub-filtered,
-  .pub-list .pub-group-empty {
+  .pub-list .pub-filtered {
     display: none !important;
   }
 </style>
@@ -113,11 +123,23 @@ script only reads the entry ids out of them.
       return n ? n.id : "";
     }
 
-    // Mark selected papers with a star before the title.
     document.querySelectorAll(".pub-list .bibliography > li").forEach(function (li) {
-      if (!selected[entryKey(li)]) return;
       var title = li.querySelector(".title");
       if (!title) return;
+
+      // Make the title the DOI link.
+      var doi = li.querySelector('.links a[href*="doi.org/"]');
+      if (doi) {
+        var link = document.createElement("a");
+        link.href = doi.href;
+        link.target = "_blank";
+        link.rel = "external nofollow noopener";
+        while (title.firstChild) link.appendChild(title.firstChild);
+        title.appendChild(link);
+      }
+
+      // Mark selected papers with a star before the title.
+      if (!selected[entryKey(li)]) return;
       var star = document.createElement("span");
       star.className = "pub-star";
       star.textContent = "★";
@@ -126,15 +148,12 @@ script only reads the entry ids out of them.
       title.insertBefore(star, title.firstChild);
     });
 
-    // Hide year headings with no visible papers (after area filter and/or search).
+    // Show the empty-state note when the area filter and search leave nothing visible.
     function syncGroups() {
       var anyVisible = false;
       document.querySelectorAll(".pub-list ol.bibliography").forEach(function (ol) {
         var visible = ol.querySelectorAll(":scope > li:not(.pub-filtered):not(.unloaded)").length;
         if (visible) anyVisible = true;
-        ol.classList.toggle("pub-group-empty", visible === 0);
-        var h = ol.previousElementSibling;
-        if (h && h.tagName === "H2") h.classList.toggle("pub-group-empty", visible === 0);
       });
       document.querySelector(".pub-empty-note").hidden = anyVisible;
     }
