@@ -16,7 +16,7 @@ nav_order: 2
   <a class="pub-scholar" href="https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
 </div>
 
-<p class="pub-legend"><span class="pub-star" aria-hidden="true">★</span> Selected publication · <sup>†</sup> Equal contribution</p>
+<p class="pub-legend"><span class="pub-star" aria-hidden="true">★</span> Selected publication · <sup>†</sup> Equal contribution · <sup>*</sup> Corresponding author</p>
 
 <div class="publications pub-list">
 
