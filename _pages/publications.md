@@ -108,31 +108,6 @@ reads the entry ids out of them.
     color: var(--global-theme-color);
     text-decoration: underline;
   }
-  /* "…" / "et al." expand the full author list: theme colour, dotted underline and a "+N" count mark them as clickable. */
-  .pub-list .pub-more {
-    padding: 0;
-    border: 0;
-    background: none;
-    color: var(--global-theme-color);
-    font: inherit;
-    text-decoration: underline dotted;
-    text-underline-offset: 0.2em;
-    cursor: pointer;
-  }
-  .pub-list .pub-more:hover,
-  .pub-list .pub-more:focus-visible {
-    text-decoration-style: solid;
-  }
-  .pub-list .pub-more-count {
-    display: inline-block;
-    margin-left: 0.25em;
-    padding: 0 0.35em;
-    border: 1px solid var(--global-theme-color);
-    border-radius: 999px;
-    font-size: 0.75em;
-    line-height: 1.4;
-    vertical-align: 0.1em;
-  }
   /* Owner's name: bold instead of the theme's italic highlight. */
   .pub-list .author em {
     font-style: normal;
@@ -206,8 +181,6 @@ reads the entry ids out of them.
 
 <script>
   (function () {
-    var SHOW_FIRST = 3; // authors shown before "et al."; the site owner is always kept visible
-
     function keysFrom(id) {
       var el = document.getElementById(id);
       if (!el) return {};
@@ -226,60 +199,8 @@ reads the entry ids out of them.
       return n ? n.id : "";
     }
 
-    // Shorten long author lists to "A, B, C, …, Owner, et al." (the owner always stays visible).
-    // Clicking "…" or "et al." expands the full list.
-    function shortenAuthors(div) {
-      var full = div.innerHTML.trim();
-      var names = full.split(/,\s*and\s+|,\s+|\s+and\s+/);
-      if (names.length <= SHOW_FIRST + 1) return;
-      var owner = names.findIndex(function (n) {
-        return n.indexOf("<em>") !== -1;
-      });
-      var last = Math.max(SHOW_FIRST - 1, owner); // index of the last name shown
-      var skipped = owner >= SHOW_FIRST ? owner - SHOW_FIRST : 0; // names hidden before the owner
-      var trailing = names.length - 1 - last; // names hidden after the last shown name
-      if (skipped + trailing === 0) return;
-
-      function moreButton(label, hidden) {
-        var b = document.createElement("button");
-        b.type = "button";
-        b.className = "pub-more";
-        b.textContent = label;
-        var count = document.createElement("span");
-        count.className = "pub-more-count";
-        count.textContent = "+" + hidden;
-        b.appendChild(count);
-        b.title = "Show all " + names.length + " authors";
-        b.setAttribute("aria-expanded", "false");
-        b.addEventListener("click", function () {
-          div.innerHTML = full;
-        });
-        return b;
-      }
-      function addHTML(html) {
-        div.insertAdjacentHTML("beforeend", html);
-      }
-
-      div.innerHTML = "";
-      addHTML(names.slice(0, SHOW_FIRST).join(", "));
-      if (owner >= SHOW_FIRST) {
-        addHTML(", ");
-        if (skipped > 0) {
-          div.appendChild(moreButton("…", skipped));
-          addHTML(", ");
-        }
-        addHTML(names[owner]);
-      }
-      if (trailing > 0) {
-        addHTML(", ");
-        div.appendChild(moreButton("et al.", trailing));
-      }
-    }
-
     document.querySelectorAll(".pub-list .bibliography > li").forEach(function (li) {
       var title = li.querySelector(".title");
-      var author = li.querySelector(".author");
-      if (author) shortenAuthors(author);
       if (!title) return;
 
       // Make the title the DOI link.
