@@ -34,10 +34,27 @@ Selected conference presentations, invited talks, seminars, and research present
 
 ### 2025
 
-- **X. Yao**, et al. _Coarse-Grained Molecular Dynamics Modelling of Lithium-Ion Battery Electrode Drying: A Sensitivity Analysis._
-  53rd SME North American Manufacturing Research Conference (NAMRC 53), June 23–27, 2025, Greenville, SC, USA. **Oral presentation.**
-- **X. Yao**, et al. _Optimization of External Pressure in Pouch Cell Manufacturing Through Large-Scale Phase-Field Simulation._
-  ASME 2025 20th International Manufacturing Science and Engineering Conference (MSEC2025), June 23–27, 2025, Greenville, SC, USA. **Oral presentation.**
+- 53rd SME North American Manufacturing Research Conference (NAMRC 53) and ASME 2025 20th International Manufacturing Science and Engineering
+  Conference (MSEC2025), co-located, June 23–27, 2025, Greenville, SC, USA. **Two oral presentations:**
+  - **X. Yao**, et al. _Coarse-Grained Molecular Dynamics Modelling of Lithium-Ion Battery Electrode Drying: A Sensitivity Analysis._ (NAMRC 53)
+  - **X. Yao**, et al. _Optimization of External Pressure in Pouch Cell Manufacturing Through Large-Scale Phase-Field Simulation._ (MSEC2025)
+
+<div class="row mt-3 mb-4">
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-1.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 65% 50%" alt="Xinxin Yao presenting on coarse-grained molecular dynamics of battery electrode drying at NAMRC 53" loading="lazy">
+  </div>
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-2.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Q&amp;A session after Xinxin Yao's talk at NAMRC 53 / MSEC 2025" loading="lazy">
+  </div>
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-4.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Colleagues in front of the NAMRC 53 / MSEC 2025 banner" loading="lazy">
+  </div>
+  <div class="col-6 col-md-3 mt-3 mt-md-0">
+    <img src="{{ '/assets/img/presentations/msec-namrc53-3.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="width: 100%; aspect-ratio: 3 / 4; object-fit: cover" alt="Xinxin Yao in downtown Greenville at night during NAMRC 53 / MSEC 2025" loading="lazy">
+  </div>
+</div>
+<div class="caption">NAMRC 53 / MSEC 2025, Greenville, June 2025.</div>
+
 - **X. Yao**, et al. _Integration of Phase-Field Model and Fast Fourier Transform-Based Crystal Plasticity with Geometrically Necessary Dislocations to Simulate Microstructure Evolution During the Manufacturing of Gradient-Grained Metals._
   TMS 2025 Annual Meeting & Exhibition, March 23–27, 2025, Las Vegas, NV, USA. **Oral presentation.**
 
