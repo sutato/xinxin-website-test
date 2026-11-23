@@ -7,11 +7,13 @@ nav: true
 nav_order: 2
 ---
 
+<div class="pub-page">
+
 <div class="pub-toolbar">
   <div class="pub-filters" role="group" aria-label="Filter publications by research area">
     <button type="button" class="pub-filter active" data-pub-filter="all" aria-pressed="true">All</button>
-    <button type="button" class="pub-filter" data-pub-filter="battery" aria-pressed="false">Battery Manufacturing</button>
-    <button type="button" class="pub-filter" data-pub-filter="am" aria-pressed="false">Additive Manufacturing</button>
+    <button type="button" class="pub-filter" data-pub-filter="battery" aria-pressed="false" title="Battery Manufacturing">Battery<span class="pub-long"> Manufacturing</span></button>
+    <button type="button" class="pub-filter" data-pub-filter="am" aria-pressed="false" title="Additive Manufacturing">Additive<span class="pub-long"> Manufacturing</span></button>
   </div>
   <a class="pub-scholar" href="https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
 </div>
@@ -21,6 +23,8 @@ nav_order: 2
 <div class="publications pub-list">
 
 {% bibliography --group_by none %}
+
+</div>
 
 </div>
 
@@ -146,6 +150,44 @@ reads the entry ids out of them.
   }
   .pub-list .pub-filtered {
     display: none !important;
+  }
+
+  /* Phones: one tidy row of equal filters with short labels, Scholar link right under them,
+     and the legend moved below the list as a footnote so the top stays short. */
+  @media (max-width: 575.98px) {
+    .pub-page {
+      display: flex;
+      flex-direction: column;
+    }
+    .pub-toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .pub-filters {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.4rem;
+      width: 100%;
+    }
+    .pub-filter {
+      padding: 0.3rem 0.4rem;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      text-align: center;
+    }
+    .pub-long {
+      display: none;
+    }
+    .pub-scholar {
+      margin-left: 0;
+      font-size: 0.85rem;
+    }
+    .pub-legend {
+      order: 3;
+      margin: 0.5rem 0 0;
+      font-size: 0.75rem;
+    }
   }
 </style>
 
