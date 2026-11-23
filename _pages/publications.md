@@ -60,14 +60,6 @@ The complete list includes the selected publications above together with additio
 
 </div>
 
-<h3 class="pub-area-heading">Other materials processing</h3>
-
-<div class="publications">
-
-{% bibliography --query @*[area=other] --group_by none %}
-
-</div>
-
 </div>
 
 <div id="pub-view-year" class="pub-view" hidden>
