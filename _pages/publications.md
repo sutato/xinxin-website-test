@@ -2,24 +2,21 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal articles and conference papers in battery manufacturing and additive manufacturing.
+description: Peer-reviewed journal and conference papers.
 nav: true
 nav_order: 2
 ---
 
-<p class="pub-intro">
-  Full record and citation metrics on <a href="https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ">Google Scholar</a>.
-  <span class="pub-legend"><span class="pub-star" aria-hidden="true">★</span> Selected publication · <sup>†</sup> Equal contribution</span>
-</p>
-
 <div class="pub-toolbar">
-  <div class="pub-filters btn-group" role="group" aria-label="Filter publications by research area">
-    <button type="button" class="btn btn-sm btn-outline-primary active" data-pub-filter="all" aria-pressed="true">All</button>
-    <button type="button" class="btn btn-sm btn-outline-primary" data-pub-filter="battery" aria-pressed="false">Battery Manufacturing</button>
-    <button type="button" class="btn btn-sm btn-outline-primary" data-pub-filter="am" aria-pressed="false">Additive Manufacturing</button>
+  <div class="pub-filters" role="group" aria-label="Filter publications by research area">
+    <button type="button" class="pub-filter active" data-pub-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="pub-filter" data-pub-filter="battery" aria-pressed="false">Battery Manufacturing</button>
+    <button type="button" class="pub-filter" data-pub-filter="am" aria-pressed="false">Additive Manufacturing</button>
   </div>
-  {% include bib_search.liquid %}
+  <a class="pub-scholar" href="https://scholar.google.com/citations?hl=en&user=BJ12R6oAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
 </div>
+
+<p class="pub-legend"><span class="pub-star" aria-hidden="true">★</span> Selected publication · <sup>†</sup> Equal contribution</p>
 
 <div class="publications pub-list">
 
@@ -27,13 +24,11 @@ nav_order: 2
 
 </div>
 
-<p class="pub-empty-note text-muted" hidden>No publications match the current filter and search.</p>
-
 {% comment %}
 Area and "selected" flags live only in _bibliography/papers.bib (fields `area` and `selected`).
 The gem's entry template does not expose custom fields, so the matching entry keys are rendered
-into inert text/html blocks below. They are never shown, searched, or loaded as images; the
-script only reads the entry ids out of them.
+into inert text/html blocks below. They are never shown or loaded as images; the script only
+reads the entry ids out of them.
 {% endcomment %}
 
 <script type="text/html" id="pub-keys-battery">
@@ -49,30 +44,50 @@ script only reads the entry ids out of them.
 </script>
 
 <style>
-  .pub-intro {
-    margin-bottom: 1rem;
-  }
-  .pub-legend {
-    display: block;
-    font-size: 0.875rem;
-    color: var(--global-text-color-light);
-  }
   .pub-toolbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .pub-filters {
+    display: flex;
     flex-wrap: wrap;
+    gap: 0.4rem;
   }
-  .pub-toolbar .bibsearch-form-input {
-    flex: 1 1 12rem;
-    margin: 0;
+  .pub-filter {
+    padding: 0.25rem 0.8rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--global-text-color);
+    background: transparent;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .pub-filter:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+  }
+  .pub-filter.active {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+  }
+  .pub-scholar {
+    margin-left: auto;
+    font-size: 0.9rem;
+  }
+  .pub-legend {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 1rem;
   }
   /* Text-only list: hide the thumbnail/venue column on this page only (About keeps its images). */
-  .pub-list .abbr {
+  .pub-list .abbr,
+  .pub-list .links {
     display: none;
   }
   .pub-list .row > [class*="col-sm-"] {
@@ -80,11 +95,7 @@ script only reads the entry ids out of them.
     max-width: 100%;
   }
   .pub-list ol.bibliography li {
-    margin-bottom: 0.75rem;
-  }
-  /* The title links to the DOI, so the separate DOI button row is not needed. */
-  .pub-list .links {
-    display: none;
+    margin-bottom: 0.9rem;
   }
   .pub-list .title a {
     color: inherit;
@@ -92,6 +103,15 @@ script only reads the entry ids out of them.
   .pub-list .title a:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
+  }
+  .pub-list .pub-more {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-decoration: underline dotted;
+    cursor: pointer;
   }
   .pub-star {
     color: var(--global-theme-color);
@@ -105,6 +125,8 @@ script only reads the entry ids out of them.
 
 <script>
   (function () {
+    var SHOW_FIRST = 3; // authors shown before "et al."; the site owner is always kept visible
+
     function keysFrom(id) {
       var el = document.getElementById(id);
       if (!el) return {};
@@ -123,8 +145,55 @@ script only reads the entry ids out of them.
       return n ? n.id : "";
     }
 
+    // Shorten long author lists to "A, B, C, …, Owner, et al." (the owner always stays visible).
+    // Clicking "…" or "et al." expands the full list.
+    function shortenAuthors(div) {
+      var full = div.innerHTML.trim();
+      var names = full.split(/,\s*and\s+|,\s+|\s+and\s+/);
+      if (names.length <= SHOW_FIRST + 1) return;
+      var owner = names.findIndex(function (n) {
+        return n.indexOf("<em>") !== -1;
+      });
+      var last = Math.max(SHOW_FIRST - 1, owner); // index of the last name shown
+      var skipped = owner >= SHOW_FIRST ? owner - SHOW_FIRST : 0; // names hidden before the owner
+      var trailing = names.length - 1 - last; // names hidden after the last shown name
+      if (skipped + trailing === 0) return;
+
+      function moreButton(label) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "pub-more";
+        b.textContent = label;
+        b.title = "Show all " + names.length + " authors";
+        b.addEventListener("click", function () {
+          div.innerHTML = full;
+        });
+        return b;
+      }
+      function addHTML(html) {
+        div.insertAdjacentHTML("beforeend", html);
+      }
+
+      div.innerHTML = "";
+      addHTML(names.slice(0, SHOW_FIRST).join(", "));
+      if (owner >= SHOW_FIRST) {
+        addHTML(", ");
+        if (skipped > 0) {
+          div.appendChild(moreButton("…"));
+          addHTML(", ");
+        }
+        addHTML(names[owner]);
+      }
+      if (trailing > 0) {
+        addHTML(", ");
+        div.appendChild(moreButton("et al."));
+      }
+    }
+
     document.querySelectorAll(".pub-list .bibliography > li").forEach(function (li) {
       var title = li.querySelector(".title");
+      var author = li.querySelector(".author");
+      if (author) shortenAuthors(author);
       if (!title) return;
 
       // Make the title the DOI link.
@@ -148,16 +217,6 @@ script only reads the entry ids out of them.
       title.insertBefore(star, title.firstChild);
     });
 
-    // Show the empty-state note when the area filter and search leave nothing visible.
-    function syncGroups() {
-      var anyVisible = false;
-      document.querySelectorAll(".pub-list ol.bibliography").forEach(function (ol) {
-        var visible = ol.querySelectorAll(":scope > li:not(.pub-filtered):not(.unloaded)").length;
-        if (visible) anyVisible = true;
-      });
-      document.querySelector(".pub-empty-note").hidden = anyVisible;
-    }
-
     function applyFilter(area) {
       document.querySelectorAll("[data-pub-filter]").forEach(function (b) {
         var on = b.getAttribute("data-pub-filter") === area;
@@ -168,27 +227,12 @@ script only reads the entry ids out of them.
         var keep = area === "all" || !!areas[area][entryKey(li)];
         li.classList.toggle("pub-filtered", !keep);
       });
-      syncGroups();
     }
 
     document.querySelectorAll("[data-pub-filter]").forEach(function (b) {
       b.addEventListener("click", function () {
         applyFilter(b.getAttribute("data-pub-filter"));
       });
-    });
-
-    // The search box (bibsearch.js) filters independently; re-sync year headings after it runs.
-    document.addEventListener("DOMContentLoaded", function () {
-      var input = document.getElementById("bibsearch");
-      if (input) {
-        input.addEventListener("input", function () {
-          setTimeout(syncGroups, 350);
-        });
-      }
-      window.addEventListener("hashchange", function () {
-        setTimeout(syncGroups, 50);
-      });
-      setTimeout(syncGroups, 50);
     });
 
     applyFilter("all");
