@@ -49,3 +49,33 @@ Through collaborations with academic institutions, national laboratories, and in
 Specific studies are described on the [projects]({{ '/projects/' | relative_url }}) page, grouped by area and tagged by method.
 
 I am interested in research and industry opportunities involving **computational science, battery R&D, modeling & simulation, and advanced manufacturing**.
+
+<style>
+  /* Selected papers: the title links to the DOI, so the DOI button is removed. */
+  .publications .title a {
+    color: inherit;
+  }
+  .publications .title a:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".publications .bibliography > li").forEach(function (li) {
+      var title = li.querySelector(".title");
+      var doi = li.querySelector('.links a[href*="doi.org/"]');
+      if (!title || !doi) return;
+      var link = document.createElement("a");
+      link.href = doi.href;
+      link.target = "_blank";
+      link.rel = "external nofollow noopener";
+      while (title.firstChild) link.appendChild(title.firstChild);
+      title.appendChild(link);
+      var links = doi.parentNode;
+      doi.remove();
+      if (!links.querySelector("a, button")) links.remove();
+    });
+  });
+</script>
