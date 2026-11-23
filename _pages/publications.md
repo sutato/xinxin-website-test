@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Peer-reviewed journal and conference papers.
+description: "Developing predictive, physics-based computational frameworks to connect manufacturing process–microstructure–performance across metal additive manufacturing and battery manufacturing."
 nav: true
 nav_order: 2
 ---
